@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+    background-image: url(file:///C:/Users/anapa/Downloads/fondo.webp);
+    height: 800px; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body p {
+    text-align: center;
+}
+article h3,h2,p {
+    color: rgb(12, 12, 48);
+    font-style: italic;
+    font-size: 15pt;
+    text-align: center;
+    text-shadow: 5px 2px 4px gray;
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 2px;
+}
+div img {
+    width: 70px;
+    right: 70px;
+    margin: 1%;
+    margin-left: 0,5%;
+}
+.textoBorder {
+    margin-left: 60%;
+    margin-right: 0,2px;
+    border-radius: 15px;
+    border:solid 2pt rgb(5, 5, 39);
+    padding: 4pt;
+}
+h3 img {
+    width: 70px;
+    right: 70px;
+}
+.nav-flex ul { display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+}
+li {
+    list-style-type: none;
+    margin: 5px;
+ }
+ /* grids */
+ @media screen and (min-width:768px) {
+ header{
+    display:grid;
+    grid-template-areas:
+    "logo1 pages";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+}
+.logo1{grid-area: logo1;}
+.pages{grid-area: pages;}
+
+/* texto */
+.texto{
+    display:grid;
+    grid-template-areas:
+    "titulo1 titulo2"
+    "texto1 texto2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2,auto);
+}
+.titulo1{grid-area: titulo1;}
+.titulo2{grid-area: titulo2;}
+.texto1{grid-area: texto1;}
+.texto2{grid-area: texto2;}
+
+/* footer */
+footer{
+    display:grid;
+    grid-template-areas:
+    "logo2 contactos";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+}
+.logo2{grid-area: logo2;}
+.contacto{grid-area: contacto;}
+ }
+ footer h3 { display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;}
+
+    p {
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+          }
+        }
+
+        h3,a {
+            color: white;
+            font-style: italic;
+        }
+
+    
